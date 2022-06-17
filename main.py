@@ -54,6 +54,10 @@ async def get_home(request: Request):
 async def get_game(request: Request):
     return templates.TemplateResponse("board.html", {"request": request})
 
+@app.get("/loja", response_class=HTMLResponse)
+async def get_game(request: Request):
+    return templates.TemplateResponse("loja.html", {"request": request})
+
 @app.websocket("/ws/{client_id}/{first_device}")
 async def websocket_endpoint(websocket: WebSocket, client_id: int, first_device: bool):
     await manager.connect(websocket, client_id, first_device)

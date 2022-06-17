@@ -76,12 +76,12 @@ button {
     flex-direction: row;
     justify-content: space-between;
     width: 90vmin;
-    height: 10vmin;
+    height: 2vmin;
 }
 
 .menu-button {
-    width: 26%;
-    height: 10vmin;
+    width: 200px;
+    height: 150px;
     background-color: #9a1032;
     color: white;
     font-weight: bold;
@@ -129,9 +129,8 @@ button {
     }
 
     .menu-button {
-        width: 10vmin;
-        height: 30%;
-        ;
+        width: 100px;
+        height: 200px;
     }
 }
 
@@ -168,7 +167,7 @@ button {
 .cancelBtn,
 .ws-id,
 .send-btn {
-    background-color: blue;
+    background-color: #9a1032;;
 }
 
 .input-board-id {
